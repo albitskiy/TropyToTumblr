@@ -1,0 +1,55 @@
+{
+  "name": "TropytoTumblr",
+  "version": "1.0.0",
+  "description": "Export Tropy items to Tumblr with tags",
+  "main": "index.js",
+  "license": "MIT",
+  "icon": "./icon.svg",
+  "author": "Anton Albitskiy",
+  
+
+  "hooks": {
+    "export": {
+      "label": "Tumblr"
+    }
+  },
+
+  "options": [
+    {
+      "field": "blogName",
+      "type": "string",
+      "label": "Your Tumblr blog name (without .tumblr.com)",
+      "default": "YOUR_BLOG_NAME"
+    },
+    {
+      "field": "consumerKey",
+      "type": "string",
+      "label": "Consumer Key",
+      "default": "YOUR_DEFAULT_CONSUMER_KEY"
+    },
+    {
+      "field": "consumerSecret",
+      "type": "string",
+      "label": "Consumer Secret",
+      "default": "YOUR_DEFAULT_CONSUMER_SECRET"
+    },
+    {
+      "field": "token",
+      "type": "string",
+      "label": "Access Token",
+      "default": "YOUR_DEFAULT_TOKEN"
+    },
+    {
+      "field": "tokenSecret",
+      "type": "string",
+      "label": "Token Secret",
+      "default": "YOUR_DEFAULT_TOKEN_SECRET"
+    }
+  ],
+
+  "dependencies": {
+    "oauth-1.0a": "^2.2.6",
+    "node-fetch": "^2.6.9",
+    "form-data": "^4.0.0"
+  }
+}
